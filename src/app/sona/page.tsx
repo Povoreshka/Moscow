@@ -1,13 +1,6 @@
 "use client"
-import { Button, Popover, Space } from "antd";
-import Image from "next/image";
-import { Steps } from "antd";
-import { Avatar } from "antd";
-import img1 from "../../public/57cfedcafe705796f8b9c980c0cfe0e0.jpg"
-import img2 from "../../public/5f1b83ec8116c191d6b9ddffdc7a1c5e.jpg"
-import img3 from "../../public/fbe0aafacc762217ccdbb65acc1446d0.jpg"
 import React from 'react';
-import { Input, QRCode } from 'antd';
+import { Image } from 'antd';
 
 const description = 'П*здец';
 
@@ -15,9 +8,31 @@ const description = 'П*здец';
 export default function Home() {
   return (
     <div className="Moscow">
-      
-        
+      <p>Она хотела быть киберспортсменкой валоранта...</p>
 
+<div className='valorant'>
+      <Image.PreviewGroup
+        preview={{
+          onChange: (current, prev) => console.log(`current index: ${current}, prev index: ${prev}`),
+        }}
+      >
+        <Image width={500} src="https://wallpapers.com/images/hd/valorant-fade-n4ht4snzvdt9o6od.jpg" />
+        <Image
+          width={500}
+          src="https://missariana.ru/wp-content/uploads/2023/12/valorant-gekko.jpg"
+        />
+        <Image
+          width={500}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rHBxfp9Wu89bJT3B2EMlUCpSWdML-T2goA&s"
+        />
+      </Image.PreviewGroup>
+
+</div>
+ <p>но она программист</p>
+
+ 
     </div>
   );
 }
+
+
