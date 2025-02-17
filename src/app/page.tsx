@@ -25,14 +25,16 @@ export default function Home() {
             <button>Соня</button>
           </form>
         </Space>
-        <Space direction="vertical" align="center">
-          <Popover content={<QRCode value="https://t.me/Sovaaaaq" bordered={false} />}>
-            <Avatar size={150} icon={<Image src={img2} />} />
-          </Popover>
-          Маша
-        </Space>
-        <Space direction="vertical" align="center">
-          <Popover content={<QRCode value="https://t.me/povoreshka1" bordered={false} />}>
+          <Space direction="vertical" align="center">
+              <Popover content={<QRCode value="https://t.me/Sovaaaaq" bordered={false}/>}>
+                  <Avatar size={150} icon={<Image src={img2}/>}/>
+              </Popover>
+              <form action="masha" target="_blank">
+                  <button>Маша</button>
+              </form>
+          </Space>
+          <Space direction="vertical" align="center">
+              <Popover content={<QRCode value="https://t.me/povoreshka1" bordered={false} />}>
             <Avatar size={150} icon={<Image src={img3} />} />
           </Popover>
           <form action="katy" target="_blank">
